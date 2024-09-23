@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.clickMeButton).setOnClickListener {
             val textBox = findViewById<EditText>(R.id.nameEditText)
             if (textBox.text.isEmpty())
-                textBox.error = "Please enter your name
+                textBox.error = "Please enter your name"
             else
                 displayTextView.text = "Hello, ${textBox.text}!"
         }
